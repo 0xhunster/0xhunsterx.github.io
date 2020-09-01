@@ -1,0 +1,485 @@
+$overlay : rgba(0,0,0,0.6);
+
+/* ========================= */
+/*     TYPOGRAPHY START      */
+/* ========================= */
+
+html{
+	scroll-behavior: smooth;
+	user-select: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Pangolin', cursive;
+}
+
+a{
+	font-family: 'Oswald', sans-serif;
+}
+
+p, pre{
+	color: #3d3d3d;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+/* ========================= */
+/*     TYPOGRAPHY END      */
+/* ========================= */
+
+/* ========================= */
+/*       BANNER SECTION      */
+/* ========================= */
+
+
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+
+.sticky{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	transition: all .5s ease;
+	z-index: 1;
+}
+
+#banner-part{
+	background: url('../img/back.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	min-height: 600px;
+	background-attachment: fixed;
+
+	.overlay{
+		background: $overlay;
+		min-height: 650px;
+	}
+
+	.navbar-brand{
+		font-family: 'Lobster', cursive;
+	}
+
+	ul{
+		li{
+			a{
+				color: #f5f0f0;
+				text-transform: uppercase;
+			}
+		}
+	}
+
+	.animated-headline{
+		h2{
+			font-size: 50px;
+    	font-weight: bold;
+    	margin-bottom: 10px;
+		}
+		p{
+			line-height: 1.6;
+    	margin-top: 30px;
+    	font-size: 15px;
+    	color: #8c9696;
+		}
+	}
+
+	.social-icon{
+		ul{
+			li{
+				width : 64px;
+				height : 64px;
+				background: rgba(47, 107, 112, 0.57);
+				margin-right: 20px;
+				border-radius: 40px;
+				transition: all .8s;
+
+				a{
+					margin-top: 13px;
+
+					.fa{
+						font-size: 25px;
+					}
+
+					.fa-twitter{
+						color: #1da1f2;
+					}
+					.fa-facebook{
+						color: #3e60a8;
+						margin-left: -2px;
+					}
+					.fa-globe{
+						color: #00ab6c;
+					}
+					.fa-youtube{
+						color: red;
+					}
+					.fa-github{
+						color: #fff;
+					}
+					
+				}
+			}
+			li:hover{
+				background : rgba(47, 107, 112, 0.37);
+				transform: rotate(360deg);
+			}
+		}
+	}
+}
+
+/* ========================= */
+/*       ABOUT SECTION      */
+/* ========================= */
+
+#new-about-page{
+	pre, hr{
+		padding: 0;
+		margin: 12px;
+		margin-left: 0;
+	}
+
+		.social{
+		ul{
+			li{
+				width : 40px;
+				height : 40px;
+				margin-right: 8px;
+				background: #ffffff;
+				border-radius: 40px;
+				transition: all 1s;
+
+				a{
+					margin-top: 2px;
+			
+					.fa{
+						font-size: 20px;
+						margin-left: -4px;
+						color: #00b9d1;
+					}
+
+					.fa-facebook{
+						margin-left: -2px;
+					}
+					
+				}
+			}
+			li:hover{
+				transform: rotate(360deg);
+			}
+		}
+	}
+}
+
+/* ========================= */
+/*       SKILLS SECTION      */
+/* ========================= */
+
+#skill-page{
+	background: url('../img/123.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 650px;
+	color: #3c4761;
+
+	.overlay{
+		background: rgba(255, 255, 255, 0.9);
+		min-height: 650px;
+
+		.skill{
+			width: 90%;
+			margin: 0 auto;
+		}
+
+		p{
+			width: 70%;
+			margin: 0 auto;
+		}
+
+		h3{
+			font-size: 1rem;
+		}
+
+		svg{
+			circle{
+				stroke-width: 5;
+			}
+			text{
+				fill: #000;
+				font-size: 1rem;
+			}
+		}
+
+		svg.skill-1 circle {
+			stroke: #30bae7; 
+		}
+		svg.skill-2 circle {
+			stroke: #d74680; 
+		}
+		svg.skill-3 circle {
+			stroke: #15c7a8; 
+		}
+		svg.skill-4 circle {
+			stroke: #eb7d4b; 
+		}
+		svg.skill-5 circle {
+			stroke: #34495e; 
+		}
+		svg.skill-6 circle {
+			stroke: #c0392b; 
+		}
+	}
+
+}
+
+/* ========================= */
+/*       SERVICER SECTION      */
+/* ========================= */
+
+
+#services-page{
+	
+
+	.fa{
+		font-size: 120px;
+	}
+	.fa-globe{
+		color: #227093;
+	}
+	.fa-android{
+		color: #20bf6b;
+	}
+	.fa-apple{
+		color: #4a638a;
+	}
+	p{
+		font-size: 15px;
+	}
+
+}
+
+/* ========================= */
+/*       CONTACT SECTION      */
+/* ========================= */
+#contact-page{
+	background: url('../img/1234.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	min-height: 650px;
+	color: #3c4761;
+
+	.overlay{
+		background: rgba(255, 255, 255, 0.9);
+		min-height: 650px;
+
+	.address{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+		form{
+			width: 80%;
+			margin: 0 auto;
+
+			a{
+				color: #4a4444;
+				font-family: 'Pangolin', cursive;
+			}
+			a:hover{
+				color: #cfcaca;
+			}
+		}
+
+	input{
+		background: rgba(59, 84, 128, 0.01);
+	}
+	textarea{
+		background: rgba(59, 84, 128, 0.01);	}
+
+
+	a{
+		text-decoration: none;
+		color: green;
+	}
+	.fa{
+		font-size: 50px;
+	}
+	
+	.fa-location-arrow{
+		color: #d35400;
+	}
+	.fa-envelope{
+		color: #2485CA;
+	}	
+}
+}
+
+/* ========================= */
+/*       FOOTER SECTION      */
+/* ========================= */
+
+footer{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+
+	a{
+		color: #e8dfdf;
+	}
+	a:hover{
+		text-decoration: none;
+		color: #cfcaca;
+	}
+
+	ul{
+		padding: 0;
+		margin: 0;
+	}
+
+	li{
+		display: inline-block;
+		list-style: none;
+	}
+	
+}
+
+@media(max-width: 991px){
+	#banner-part{
+
+		.animated-headline{
+			h2{
+			font-size: 40px;
+			}
+			h1{
+				font-size: 50px;
+			}
+		}
+	}
+}
+
+@media(max-width: 767px){
+	#banner-part{
+
+		.animated-headline{
+			h2{
+				font-size: 35px;
+			}
+			h1{
+				font-size: 35px;
+			}
+		}
+	}
+}
+
+@media(max-width: 500px){
+	#banner-part{
+		min-height: 500px;
+
+		.overlay{
+			min-height: 500px;
+		}
+
+		.animated-headline{
+			h2{
+				font-size: 27px;
+			}
+			h1{
+				font-size: 22px;
+			}
+
+			.social-icon{
+				ul{
+					li{
+						width : 50px;
+						height : 50px;
+						margin-right: 15px;
+						
+						a{
+							margin-top: 6px;
+							
+
+							.fa{
+								font-size: 22px;
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+}
+
+@media(max-width: 385px){
+	#banner-part{
+
+		.animated-headline{
+			.social-icon{
+				ul{
+					li{
+						width : 45px;
+						height : 45px;
+						margin-right: 8px;
+						
+						a{
+							margin-top: 3px;
+							
+
+							.fa{
+								font-size: 20px;
+								margin-left: -1px;
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+}
+
+@media(max-width: 360px){
+	#banner-part{
+
+		.animated-headline{
+			h2{
+				font-size: 27px;
+			}
+			h1{
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+
+@media(max-width: 324px){
+	#banner-part{
+
+		.animated-headline{
+			.social-icon{
+				ul{
+					li{
+						width : 40px;
+						height : 40px;
+						margin-right: 8px;
+						
+						a{
+							margin-top: 0px;
+							
+
+							.fa{
+								font-size: 20px;
+								margin-left: -4px;
+							}
+						}
+					}
+				}
+
+			}
+		}
+	}
+}

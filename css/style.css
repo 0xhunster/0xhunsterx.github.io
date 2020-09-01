@@ -1,0 +1,279 @@
+html {
+  scroll-behavior: smooth;
+  user-select: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Pangolin', cursive; }
+
+a {
+  font-family: 'Oswald', sans-serif; }
+
+p, pre {
+  color: #3d3d3d;
+  font-family: 'Open Sans Condensed', sans-serif; }
+
+/* ========================= */
+/*     TYPOGRAPHY END      */
+/* ========================= */
+/* ========================= */
+/*       BANNER SECTION      */
+/* ========================= */
+/* sticky */
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  transition: all .5s ease;
+  z-index: 1; }
+
+#banner-part {
+  background: url("../img/back.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 720px;
+  background-attachment: fixed; }
+  #banner-part .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    min-height: 720px; }
+  #banner-part .navbar-brand {
+    font-family: 'Lobster', cursive; }
+  #banner-part ul li a {
+    color: #f5f0f0;
+    text-transform: uppercase; }
+  #banner-part .animated-headline h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  #banner-part .animated-headline p {
+    line-height: 1.6;
+    margin-top: 30px;
+    font-size: 15px;
+    color: #8c9696; }
+  #banner-part .social-icon ul li {
+    width: 64px;
+    height: 64px;
+    background: rgba(47, 107, 112, 0.57);
+    margin-right: 20px;
+    border-radius: 40px;
+    transition: all .8s; }
+    #banner-part .social-icon ul li a {
+      margin-top: 13px; }
+      #banner-part .social-icon ul li a .fa {
+        font-size: 25px; }
+      #banner-part .social-icon ul li a .fa-twitter {
+        color: #1da1f2; }
+      #banner-part .social-icon ul li a .fa-facebook {
+        color: #3e60a8;
+        margin-left: -2px; }
+      #banner-part .social-icon ul li a .fa-globe {
+        color: #00ab6c; }
+      #banner-part .social-icon ul li a .fa-youtube {
+        color: red; }
+      #banner-part .social-icon ul li a .fa-github {
+        color: #fff; }
+      #banner-part .social-icon ul li a .fa-linkedin {
+        color: #0683d1; }
+  #banner-part .social-icon ul li:hover {
+    background: rgba(47, 107, 112, 0.37);
+    transform: rotate(360deg); }
+
+/* ========================= */
+/*       ABOUT SECTION      */
+/* ========================= */
+#new-about-page pre, #new-about-page hr {
+  padding: 0;
+  margin: 12px;
+  margin-left: 0; }
+
+#new-about-page .social ul li {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  background: #ffffff;
+  border-radius: 40px;
+  transition: all 1s; }
+  #new-about-page .social ul li a {
+    margin-top: 2px; }
+    #new-about-page .social ul li a .fa {
+      font-size: 20px;
+      margin-left: -4px;
+      color: #00b9d1; }
+    #new-about-page .social ul li a .fa-facebook {
+      margin-left: -2px; }
+
+#new-about-page .social ul li:hover {
+  transform: rotate(360deg); }
+
+/* ========================= */
+/*       SKILLS SECTION      */
+/* ========================= */
+#skill-page {
+  background: url("../img/123.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 650px;
+  color: #3c4761; }
+  #skill-page .overlay {
+    background: rgba(255, 255, 255, 0.9);
+    min-height: 650px; }
+    #skill-page .overlay .skill {
+      width: 90%;
+      margin: 0 auto; }
+    #skill-page .overlay p {
+      width: 70%;
+      margin: 0 auto; }
+    #skill-page .overlay h3 {
+      font-size: 1rem; }
+    #skill-page .overlay svg circle {
+      stroke-width: 5; }
+    #skill-page .overlay svg text {
+      fill: #000;
+      font-size: 1rem; }
+    #skill-page .overlay svg.skill-1 circle {
+      stroke: #30bae7; }
+    #skill-page .overlay svg.skill-2 circle {
+      stroke: #d74680; }
+    #skill-page .overlay svg.skill-3 circle {
+      stroke: #15c7a8; }
+    #skill-page .overlay svg.skill-4 circle {
+      stroke: #eb7d4b; }
+    #skill-page .overlay svg.skill-5 circle {
+      stroke: #34495e; }
+    #skill-page .overlay svg.skill-6 circle {
+      stroke: #c0392b; }
+
+/* ========================= */
+/*       SERVICER SECTION      */
+/* ========================= */
+#services-page .fa {
+  font-size: 120px; }
+
+#services-page .fa-globe {
+  color: #227093; }
+
+#services-page .fa-android {
+  color: #20bf6b; }
+
+#services-page .fa-apple {
+  color: #4a638a; }
+
+#services-page p {
+  font-size: 15px; }
+
+/* ========================= */
+/*       CONTACT SECTION      */
+/* ========================= */
+#contact-page {
+  background: url("../img/1234.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 650px;
+  color: #3c4761; }
+  #contact-page .overlay {
+    background: rgba(255, 255, 255, 0.9);
+    min-height: 650px; }
+    #contact-page .overlay .address {
+      width: 80%;
+      margin: 0 auto; }
+    #contact-page .overlay form {
+      width: 80%;
+      margin: 0 auto; }
+      #contact-page .overlay form a {
+        color: #4a4444;
+        font-family: 'Pangolin', cursive; }
+      #contact-page .overlay form a:hover {
+        color: #cfcaca; }
+    #contact-page .overlay input {
+      background: rgba(59, 84, 128, 0.01); }
+    #contact-page .overlay textarea {
+      background: rgba(59, 84, 128, 0.01); }
+    #contact-page .overlay a {
+      text-decoration: none;
+      color: green; }
+    #contact-page .overlay .fa {
+      font-size: 50px; }
+    #contact-page .overlay .fa-location-arrow {
+      color: #d35400; }
+    #contact-page .overlay .fa-envelope {
+      color: #2485CA; }
+
+/* ========================= */
+/*       FOOTER SECTION      */
+/* ========================= */
+footer {
+  padding: 0;
+  margin: 0;
+  text-align: center; }
+  footer a {
+    color: #e8dfdf; }
+  footer a:hover {
+    text-decoration: none;
+    color: #cfcaca; }
+  footer ul {
+    padding: 0;
+    margin: 0; }
+  footer li {
+    display: inline-block;
+    list-style: none; }
+
+@media (max-width: 991px) {
+  #banner-part .animated-headline h2 {
+    font-size: 40px; }
+  #banner-part .animated-headline h1 {
+    font-size: 50px; } }
+
+@media (max-width: 767px) {
+  #banner-part .animated-headline h2 {
+    font-size: 35px; }
+  #banner-part .animated-headline h1 {
+    font-size: 35px; } }
+
+@media (max-width: 500px) {
+  #banner-part {
+    min-height: 500px; }
+    #banner-part .overlay {
+      min-height: 500px; }
+    #banner-part .animated-headline h2 {
+      font-size: 27px; }
+    #banner-part .animated-headline h1 {
+      font-size: 22px; }
+    #banner-part .animated-headline .social-icon ul li {
+      width: 50px;
+      height: 50px;
+      margin-right: 15px; }
+      #banner-part .animated-headline .social-icon ul li a {
+        margin-top: 6px; }
+        #banner-part .animated-headline .social-icon ul li a .fa {
+          font-size: 22px; } }
+
+@media (max-width: 385px) {
+  #banner-part .animated-headline .social-icon ul li {
+    width: 45px;
+    height: 45px;
+    margin-right: 8px; }
+    #banner-part .animated-headline .social-icon ul li a {
+      margin-top: 3px; }
+      #banner-part .animated-headline .social-icon ul li a .fa {
+        font-size: 20px;
+        margin-left: -1px; } }
+
+@media (max-width: 360px) {
+  #banner-part .animated-headline h2 {
+    font-size: 27px; }
+  #banner-part .animated-headline h1 {
+    font-size: 18px; } }
+
+@media (max-width: 324px) {
+  #banner-part .animated-headline .social-icon ul li {
+    width: 40px;
+    height: 40px;
+    margin-right: 8px; }
+    #banner-part .animated-headline .social-icon ul li a {
+      margin-top: 0px; }
+      #banner-part .animated-headline .social-icon ul li a .fa {
+        font-size: 20px;
+        margin-left: -4px; } }
